@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="main">
+    <div class="login">
+        <form action="/server" autocomplete="off" method="post">
+            <h2>Sign Up</h2>
+            <div class="box">
+                <input type="text" required>
+                <i id="pri" class="ri-id-card-fill"></i>
+                <span>Username</span>
+            </div>
+            <div class="box">
+                <input type="text" name="email" required>
+                <i id="pri" class="ri-mail-fill"></i>
+                <span>Email</span>
+            </div>
+            <div class="box">
+                <input type="password" name="pass" required id="pass">
+                <i id="pri" class="ri-lock-password-fill"></i>
+                <span>Password</span>
+                <i id="show" class="ri-eye-fill"></i>
+            </div>
+            <div class="box">
+                <input type="password" name="pass" required id="pass2">
+                <i id="pri" class="ri-lock-password-fill"></i>
+                <span>Confirm Password</span>
+                <i id="show2" class="ri-eye-fill"></i>
+            </div>
+            <div class="btn">
+                <button>Sign Up</button>
+            </div>
+            <p>Already Have an Account ? <a href="index2.html">SignIn</a></p>
+        </form>
+    </div>
+   </div>
+
+   <script src="showpass.js"></script>
+</body>
+</html>
